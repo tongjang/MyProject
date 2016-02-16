@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* 기본스타일
+===============================================================================================*/
+
+*{
+		margin:0px;  
+		padding: 0px; 
+		font-size: 12px;    
+	 
+} 
+ 
+H1 {COLOR: #ffffff;  FONT-SIZE: 18px }
+H2 {COLOR: #000000;  FONT-SIZE: 164px }
+H2 { COLOR:#000000; FONT-SIZE: 16px;  }
+H2 A{COLOR: #000000; TEXT-DECORATION: none}
+H2 A:hover  A{COLOR: #000000; TEXT-DECORATION: none}
+H2 A.list{  COLOR:#000000; FONT-SIZE: 14px;  }
+H2 A.list:hover {COLOR: #000000; text-decoration: none; FONT-SIZE: 164px;  }
+/*
+H6 {		FONT-SIZE: 12px; TEXT-ALIGN: left	}
+
+IMG {	BORDER:0px; PADDING:0px; MARGIN: 0px;	}
+
+FIELDSET { BORDER : 0px }
+IFRAME   { BORDER : 0px }
+
+LI {	LIST-STYLE-TYPE: none	}
+*/
+A{COLOR: #000000; TEXT-DECORATION: none}
+A:hover {TEXT-DECORATION: none}
+A.list{  COLOR:#000000; font-size:11px}
+A.list:hover {COLOR: #ffffff; text-decoration: none; font-size:11px} 
+
+ 
+.font_white { COLOR:#ffffff; FONT-SIZE: 12px;  }
+.font_white A{COLOR: #ffffff; TEXT-DECORATION: none}
+.font_white A:hover  A{COLOR: #ffffff; TEXT-DECORATION: none}
+.font_white A.list{  COLOR:#ffffff; font-size:11px}
+.font_white A.list:hover {COLOR: #ffffff; text-decoration: none; font-size:11px} 
+
+ 
+.bus_btn { COLOR:#005daa; FONT-SIZE: 12px;  }
+.bus_btn A{COLOR: #005daa; TEXT-DECORATION: none;FONT-SIZE: 12px; }
+.bus_btn A:hover  A{COLOR: #005daa; TEXT-DECORATION: none; FONT-SIZE: 12px;  }
+.bus_btn A.list{  COLOR:#005daa; font-size:12px}
+.bus_btn A.list:hover {COLOR: #005daa; text-decoration: none; FONT-SIZE: 12px;  }
+
+#maincontent{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 30px; /*Set bottom value to HeightOfFrameDiv*/
+overflow: auto; 
+background: #fff;
+}
+
+
+#framecontent{
+position: absolute; 
+bottom: 0; 
+left: 0; 
+width: 100%; 
+height: 30px; /*Height of frame div*/
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background: #e0e0e0;
+color: white;
+text-align:-moz-center; /*FF*/
+#text-align:center; /*IE*/
+/*background-image:url('admin/images/logout_bg.png');*/
+
+}
+
+
+* html body{ /*IE6 hack*/
+padding: 0 0 130px 0; /*Set value to (0 0 HeightOfFrameDiv 0)*/
+}
+
+* html #maincontent{ /*IE6 hack*/
+height: 100%; 
+width: 100%; 
+}

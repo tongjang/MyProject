@@ -1,0 +1,39 @@
+#header {	background-color: #FF4A4D;	height: 50px;	width: 320px;}
+#contents { 	float: left; 	background-color: #FFC64A; 	width: 280px;	height: 214px; /* 임의 지정 */}
+#sidebar {	float: right;	background-color: #85C69D;	width: 40px;	height: 214px; /* 임의 지정 */}
+#footer {	clear: both;	background-color: #3B83B1;	height: 40px;	width: 320px;} 
+
+/* 공지사항 */
+@charset "UTF-8";
+
+/* 기본스타일
+===============================================================================================*/
+
+*{
+		margin:0px;  padding: 0px; border:0px  border-collapse:collapse;
+		font-family: Dotum,Gulim,AppleGothic,Sans-serif;
+		font-size: 12px;    
+		color: #5b5b5b;
+		line-height: 1.5em;
+		background-color:#ffffff;	
+} 
+
+H1 { 	FONT-SIZE: 12px; TEXT-ALIGN: left	}
+H2 {		FONT-SIZE: 12px; TEXT-ALIGN: left	}
+H3 {		FONT-SIZE: 12px; TEXT-ALIGN: left	}
+H4 {		FONT-SIZE: 12px; TEXT-ALIGN: left	}
+H5 {		FONT-SIZE: 12px; TEXT-ALIGN: left	}
+H6 {		FONT-SIZE: 12px; TEXT-ALIGN: left	}
+IMG {	BORDER:0px; PADDING:0px; MARGIN: 0px;	}
+
+FIELDSET { BORDER : 0px }
+IFRAME   { BORDER : 0px }
+
+LI {	LIST-STYLE-TYPE: none	}
+
+A{COLOR: #5b5b5b; TEXT-DECORATION: none}
+A:hover {COLOR: #498109; TEXT-DECORATION: none}
+A.list{  COLOR:#8a8989; font-size:11px}
+A.list:hover {COLOR: #498109; text-decoration: none; font-size:11px} 
+
+  

@@ -1,0 +1,206 @@
+body { 	margin: 0; 	padding: 0px; 	background-color: #FFF; }
+#container { 	width: 320px;	height: 480px;}
+#header {	background-color: #FF4A4D;	height: 50px;	width: 320px;}
+#contents { 	float: left; 	background-color: #FFC64A; 	width: 280px;	height: 214px; /* 임의 지정 */}
+#sidebar {	float: right;	background-color: #85C69D;	width: 40px;	height: 214px; /* 임의 지정 */}
+#footer {	clear: both;	background-color: #3B83B1;	height: 40px;	width: 320px;} 
+
+/* 공지사항 */
+@charset "UTF-8";
+@import url("bbs.css"); /* 게시판스타일*/
+
+/* 기본스타일
+===============================================================================================*/
+
+*{
+		margin:0px;  padding: 0px; border:0px  border-collapse:collapse;
+		font-family: Dotum,Gulim,AppleGothic,Sans-serif;
+		font-size: 12px;    
+		color: #5b5b5b;
+		line-height: 1.5em;
+		background-color:#ffffff;
+		
+} 
+
+H1 { 	FONT-SIZE: 12px; TEXT-ALIGN: left	}
+H2 {		FONT-SIZE: 12px; TEXT-ALIGN: left	}
+H3 {		FONT-SIZE: 12px; TEXT-ALIGN: left	}
+H4 {		FONT-SIZE: 12px; TEXT-ALIGN: left	}
+H5 {		FONT-SIZE: 12px; TEXT-ALIGN: left	}
+H6 {		FONT-SIZE: 12px; TEXT-ALIGN: left	}
+IMG {	BORDER:0px; PADDING:0px; MARGIN: 0px;	}
+
+FIELDSET { BORDER : 0px }
+IFRAME   { BORDER : 0px }
+
+LI {	LIST-STYLE-TYPE: none	}
+
+A{COLOR: #5b5b5b; TEXT-DECORATION: none}
+A:hover {COLOR: #498109; TEXT-DECORATION: none}
+
+A.list{  COLOR:#8a8989; font-size:11px}
+A.list:hover {COLOR: #498109; text-decoration: none; font-size:11px} 
+
+ 
+.deepsea 
+{
+background-image:url('/images/index_bg.png');
+background-color:blue;
+color:white;
+font-family:sans-serif;
+font-weight:600;
+}
+
+
+/* 센터정렬
+================================== 
+
+body { 
+  text-align: center; 
+  min-width: 982px;
+}
+*
+#wrapper { 
+  width: 982px; 
+  margin: 0 auto; 
+  text-align: left; 
+} 
+
+/* 스크롤바색상
+==================================  
+
+body{
+		scrollbar-face-color: #ffffff;                   /*바 표면색
+		scrollbar-shadow-color: #e4e4e4;         /*바 오른쪽과아래색
+		scrollbar-highlight-color: #e4e4e4;       /*바 왼쪽과 위쪽색*
+		scrollbar-3dlight-color: #ffffff;        
+		scrollbar-darkshadow-color: #ffffff;        
+		scrollbar-track-color: #ffffff;                  /*트랙*
+		scrollbar-arrow-color: #e4e4e4;            /*화살표*/
+
+}
+
+/* float 해제
+================================== */
+.clear{clear:both;}
+
+
+/* 메인페이지
+===============================================================================================*/
+
+/* main_head
+================================== */
+#head{	position:relative; width:982px; height:118px; /* head _div*/	}
+#head .top{ width:982px; height:57px;}
+#head .top a.logo{ 	width:110px; height:31px; 	margin-left: 32px; margin-top:14px; }
+#head .top ul {position:absolute; left:841px; top:36px;}
+#head .top li{float:left;}
+#head .top li a{display:inline-block;}
+
+/*gnb_flash*/
+
+#head .gnb{position:absolute; width:982px; height:60px; left:0px; top:57px;  float:left; display:block;}
+
+/* main_container
+================================== */
+ 
+
+#container .m_cont ul{margin:0; padding:0}
+#container .m_cont li{float:left;}
+#container .m_cont li.m_notice{ 	width:253px; height:138px;	background: url(../v1/images/main_body/img_cont1.gif) no-repeat left top;}
+#noti_box{ margin-top:250px; margin-left:20px;width:300px; height:100px;text-overflow:ellipsis; overflow:hidden; white-space:nowrap; }
+div.noti_box a{ font-size:12px; font-weight:normal; }
+
+/* foot
+================================== */
+
+#foot {
+	position:relative; width:983px; height:79px;/* foot_div*/
+	background: url(../v1/images/btm/bg_btm.gif) no-repeat left top; /* foot_bg*/
+	margin-top:19px; 
+}
+
+#foot span{ margin:0; padding:0; display:block; float:left; background-color:#f7f7f7;}
+#foot span.f_logo{padding-left:37px; padding-top:26px;}
+#foot span.f_copy{padding-left:68px; padding-top:26px;}
+#foot span.f_family{padding-left:132px; padding-top:26px;}
+#foot span.f_select{padding-top:25px;}
+#foot span.f_select select{
+	margin:0; padding:0; width:180px; height:11px;  font-size:11px;
+	border:1px solid #c6c6c6; background-color:#f7f7f7;
+}
+
+/* 서브페이지
+===============================================================================================*/
+
+/* sub_head
+================================== */
+#s_head {position:relative; width:100%; height:250px;} /* head _div*/
+#s_head .top{ width:982px; height:57px;}
+#s_head .top a.logo{ 
+	width:110px; height:31px; 
+	margin-left: 32px; margin-top:14px; 
+}
+#s_head .top ul {position:absolute; left:841px; top:36px;}
+#s_head .top li{float:left;}
+#s_head .top li a{display:inline-block;}
+
+/*gnb_flash*/
+#s_head .gnb{position:absolute; width:100%px; height:193px; left:0px; top:57px;  float:left; display:block;}
+
+
+/* container
+================================== */
+#s_container{width:982px; display:inline-block;}
+#s_container:after{display:block;clear:both;content:''}
+
+/* snb
+================================== */
+#s_left {float:left; width:172px;}
+#s_left .left_title {width:172px; height:81px;}
+
+/* sub_body
+================================== */
+#s_body { float:right; width:773px;  padding-right:14px;}
+
+/* content_title */
+#s_body ul{height:33px;}
+#s_body li {height:33px;}
+#s_body li.s_title {float:left; height:33px;}
+#s_body li.s_nav {float:right; }
+#s_body li.s_nav span{display:block; float:left;}
+#s_body li.s_nav span.home {margin-top:16px; padding-right:5px;}
+#s_body li.s_nav span.navi {margin-top:13px;}
+
+/* content*/
+#s_container #s_body div.content{position:relative; width:773px; min-height:390px;  margin-top:40px;}
+
+
+
+/* 서브페이지 내용
+===============================================================================================*/
+
+
+/* sub1 오시는길*/
+
+div.content #print{ position:absolute; width:84px; height:25px; left:419px; top:209px;}
+
+
+/* sub2 통합의료정보시스템 구성 테이블*/
+
+table.table_line
+{ width: 560px; border-collapse:collapse;  border:0px; margin-top:10px;}
+
+
+.table_line td {
+	margin:0;
+  padding:3px 10px;
+	text-align:left;
+	border: 1px solid #e7e7e7;  
+}
+
+/* sub3 테이블 라인*/
+
+.td_padding {padding:15px; border-bottom: dotted 1px #d7d7d0;}
+.td_padding2 {padding-left :15px;}
+.t_top{border-top: dotted 1px #d7d7d0;}
